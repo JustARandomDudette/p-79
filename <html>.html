@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <section id = "heading1">
+            <h1>Welcome To Pete's Pizza!</h1>
+            <h2>Here, customer safety and satisfaction are our main priorties! </h2>
+            <h3>Have any pizza ideas? Make sure to suggest it, and in just a few seconds, it'll be part of our menu!</h3>
+        </section>
+    </head>
+    <body>
+        <center>
+            <section id = "bam">
+            <button type = "button" id = "buttonShowMenu" onclick = "showMenu()">Show Menu</button>
+            <button type = "button" id = "buttonAddSuggestions" onclick="showMenu()">Add Suggestions!</button>
+            <input  id = "inputt" class = "text"></input>
+            
+            <p id = "displaymenu"></p>
+            <p id = "displaymenu2"></p>
+            <img src = "https://pbs.twimg.com/media/E4p_NaKVkAgaMD7.jpg" height = "400px" width = "470px"/>
+            </section>
+        </center>
+        <script>
+             var pizzaMenu = ["Chicken Tandoori Pizza", "Beef Pizza", "Pepperoni Pizza", "Cheese Pizza" , "Veg Supreme Pizza" , "Paneer Pizza"];
+            var textInput = document.getElementById("inputt").value;
+            function showMenu() {
+                var textInput = document.getElementById("inputt").value;
+            
+                pizzaMenu.push(textInput);
+                console.log(textInput);
+                document.getElementById("displaymenu").innerHTML = pizzaMenu;
+        
+        
+            }
+            
+    
+
+        </script>
+        <style>
+            body {
+                background-color: yellow;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+
+
+            }
+
+        
+        </style>
+    
+    </body>
+</html>
